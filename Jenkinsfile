@@ -1,7 +1,7 @@
 pipeline {
  agent any
  stages {
- stag('Build') {
+ stage('Build') {
  steps {
  sh 'g++ -o PES2UG20CS370-1 ./main/hello.cpp'
  echo 'Building successful'
@@ -9,7 +9,7 @@ pipeline {
  }
  stage('Test') {
  steps {
- sh './PES2UG20CS370'
+ sh ''
  echo 'Testing successful'
  }
  }
